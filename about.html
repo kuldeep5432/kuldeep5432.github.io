@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Website XssInArticle<svg/onload=alert(document.location)> 2</title>
+    <title>xsstitle <svg/onload=alert(document.location)> 2</title>
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
@@ -24,7 +24,13 @@
     <!-- this is the content -->
     <div class="flex-container">
         <div id="1">
-            <h2>About</h2>
+            <h2>xssabout</h2>
+            <p>"><s"%2b"cript>alert(document.cookie)</script></p>
+            <h2>xssabout</h2>
+            <p>foo<script>alert(1)</script></p>
+            <h2>xssabout</h2>
+            <p><scr<script>ipt>alert(1)</scr</script>ipt></p>
+            <h2>xssabout</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
         </div>
         <div id="2">
